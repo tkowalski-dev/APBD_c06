@@ -1,10 +1,12 @@
+using APBD_c06.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
-// Dodać zależność bazy danych
+builder.Services.AddDbContext<MasterContext>();
 
 var app = builder.Build();
 

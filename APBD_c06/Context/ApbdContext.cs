@@ -1,6 +1,6 @@
 ﻿namespace APBD_c06.Context;
 
-using APBD_c06.Models;
+using Models;
 using Microsoft.EntityFrameworkCore;
 
 public partial class MasterContext : DbContext
